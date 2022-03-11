@@ -21,10 +21,7 @@
     
     
   }
-  body{
-      background-color: #555;
-  }
-  
+
 /*
 we add media quaries to the contaner in order to be responsive,
 and don't put width just padding an marign.
@@ -232,6 +229,37 @@ header .container .profile a:hover{
     }
 }
 /* HEADER */
+
+/* Banner */
+.banner{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.712)),url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+.banner .container{
+    padding-top: 4rem;
+    text-align: center;
+    color: #fff;
+
+}
+.banner .container {
+    padding-top: 4rem;
+    text-align: center;
+    color: #fff;
+    
+}
+.banner .container h2{
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+}
+.banner .container p{
+    margin-bottom: 3rem;
+    font-size: 0.7em;
+}
+/* Banner */
 /*------ Main----------- */
 main{
     min-height: 70vh;
