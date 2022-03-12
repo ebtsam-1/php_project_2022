@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafeteria | Website</title>
     <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/b0aafc83bb.js" crossorigin="anonymous"></script>
 
     <!--Google fonts -->
 
@@ -66,7 +66,57 @@
       </div>
     </div>
     <main>
-      <div class="container">bla bla</div>
+       <div class="home-user">
+        <div class="search">
+          <div class="container">
+             <form action="">
+              <input type="text" name="search" id="search">
+              <input type="submit" value="Search" id="submit">
+             </form>
+          </div>
+        </div>
+        <div class="content">
+          <div class="container">
+            <div class="product">
+              <img src="images/products/coffee1.png">
+              <p class="name">Coffee <i class="fa-solid fa-coffee-beans"></i></p>
+              <p class="Price">$2.00</p>
+              <a href="" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+              <img src="images/products/tea.png">
+              <p class="name">tea</p>
+              <p class="Price">$2.00</p>
+              <a href="" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+              <img src="images/products/cuppochino.png">
+              <p class="name">Cuppochinoo</p>
+              <p class="Price">$2.00</p>
+              <a href="" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+              <img src="images/products/dessert.png">
+              <p class="name">Coffee</p>
+              <p class="Price">$2.00</p>
+              <a href="" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+              <img src="images/products/exspresso.png">
+              <p class="name">Coffee</p>
+              <p class="Price">$2.00</p>
+              <a href="" class="btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="cart" id="cart">
+          <div class="icon" id="icon">
+            <i class="fa-solid fa-cup-togo"></i>
+            cart
+        </div>
+        </div>
+  
+       </div>
     </main>
     <footer>
       <div class="container">
@@ -106,5 +156,16 @@
         <p>Created By <span>PHP Team</span> | All Rights Are Reserved 2022</p>
       </div>
     </footer>
+
+
+
+    <script>
+      let cart = document.getElementById("cart");
+      let icon = document.getElementById("icon");
+
+     icon.addEventListener('click',()=>{
+      cart.classList.toggle('active')
+     })
+    </script>
   </body>
 </html>

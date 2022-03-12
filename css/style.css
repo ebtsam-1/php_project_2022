@@ -261,9 +261,98 @@ header .container .profile a:hover{
 }
 /* Banner */
 /*------ Main----------- */
-main{
-    min-height: 70vh;
+.home-user{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.911)),url(../images/home_background.jpg);
+    background-position: top;
+    background-size: cover;
 }
+.home-user .search{
+    width: 100%;
+    background: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.712));
+    padding: 1.8rem 0;
+}
+.home-user .search .container{
+    text-align: right;
+}
+
+.home-user .search .container form #search{
+    padding: 0.3rem 0.5rem;
+    background: none;
+    border: 1px solid #333;
+    margin: 0;
+    color: #fff;
+ }
+ .home-user .search .container form #submit{
+    padding: 0.4rem 0.7rem;
+    background-color: #333;
+    border:none;
+    color: var(--main-color);
+    margin: 0;
+ 
+ }
+ .home-user .content .container{
+     display: grid;
+     grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+     grid-gap:20px;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 4rem;
+ }
+.home-user .content .container .product{
+    /* box-shadow: 0 15px 20px rgba(78, 77, 77, 0.2); */
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.514);
+    border: 5px solid rgba(170, 67, 67, 0.082);
+    padding-bottom: 0.5rem;
+ }
+.home-user .content .container .product img{
+   width: 100%;
+ }
+.home-user .content .container .product p{
+    padding: 0rem 1rem 0.2rem;
+  }
+  .home-user .content .container .product p:last-child{
+    margin-bottom: 0.3rem;
+  }
+  .home-user .content .container .product a{
+    padding: 0.2rem 0.5rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+.cart{
+    position: fixed;
+    width: 500px;
+    padding: 1rem;
+    left: -500px;
+    top: 78px;
+    background-color: rgba(10, 10, 10, 0.678);
+    min-height: 700px;
+    color: #fff;
+    transition: 0.5s;
+}
+.cart.active{
+    left: 0;
+}
+.icon{
+    position: absolute;
+    top: 20px;
+    right: -80px;
+    width: 80px;
+    height: 50px;
+    background-color: rgba(10, 10, 10, 0.719);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--main-color);
+    font-size: 2.2rem;
+    border-radius: 5px;
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+  
+} 
 /*------ Main----------- */
 /* FOOTER */
 footer{
