@@ -78,7 +78,7 @@ and don't put width just padding an marign.
 /*-----------Global Classes-----------*/
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 ul{
     list-style: none;
@@ -86,7 +86,7 @@ ul{
 input{
     outline: none;
 }
-.btn{
+.btn2{
     font-size: 1rem;
     background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     padding: 1rem 3rem;
@@ -96,7 +96,7 @@ input{
     font-weight: 600;
 
 }
-.btn:hover{
+.btn2:hover{
     background: none;
     border: 2px solid #ffffff;
     color: #ffffff;
@@ -133,16 +133,20 @@ header .container{
     justify-content: space-between;
     align-items: center;
 }
-header .container .logo{
+header .container .logo2{
     z-index: 5;
 }
-header .container .logo h2{
-    font-size: 2rem;
+header .container .logo2 h2{
+    font-size: 2rem !important;
     font-family: 'Dancing Script', cursive;
     color: #91dbfd;
-   
-    margin: 0;
+   padding: 0 !important;
+    margin: 0 !important;
 
+}
+header .container nav{
+    padding: 0 !important;
+    margin: 0 !important;
 }
 header .container nav ul{
 display: flex;
@@ -167,10 +171,10 @@ header .container .profile{
     display: flex;
     z-index: 5;
 }
-.fa-times:hover{
+header .container .profile .fa-times:hover{
     color: #ffffff;
 }
-.fa-times{
+header .container .profile .fa-times{
     font-size: 1.1rem;
     color:#3f4954;
     display: none;
@@ -332,6 +336,8 @@ header .container .profile a:hover{
     min-height: 700px;
     color: #fff;
     transition: 0.5s;
+    z-index: 1000;
+    padding: 2rem 1 1rem;
 }
 .cart.active{
     left: 0;
@@ -351,8 +357,44 @@ header .container .profile a:hover{
     border-radius: 5px;
     font-family: 'Dancing Script', cursive;
     cursor: pointer;
+   
   
 } 
+.home-user .cart .child{
+    padding: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.483);
+    margin-bottom: 1rem;
+}
+.home-user .cart .child input{
+    width: 50px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.home-user .cart .child span{
+    font-size: 1.1rem;
+    margin-right: 0.8rem;
+}
+.home-user .cart .child a{
+color: var(--main-color);
+background-color: black;
+padding: 0.3rem 0.5rem;
+}
+.home-user .cart .note textarea{
+    border: 1px solid #333;
+    background-color: rgba(0, 0, 0, 0.566);
+    color: #fff;
+    padding: 1rem;
+    width: 90%;
+    outline: none;
+}
+.home-user .cart .note select{
+    border: 1px solid #333;
+    background-color: rgba(0, 0, 0, 0.566);
+    color: #fff;
+    outline: none;
+}
 /*------ Main----------- */
 /* FOOTER */
 footer{

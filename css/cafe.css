@@ -128,32 +128,32 @@ input{
     color: #fff;
     min-height: 100vh;
 }
-.container .welcomeHeader{
+.big-container .container .welcomeHeader{
     padding: 2rem 0 0 0;
     text-align: center;
 
 }
-.welcomeHeader.logo{
+.big-container .container .welcomeHeader .logo{
     font-size: 2.2em;
     margin-bottom: 1rem;
     font-family: 'Dancing Script', cursive;
     color: #91dbfd;
     font-weight: 600;
 }
-.container .welcomeHeader nav ul{
+.big-container .container .welcomeHeader nav ul{
     display: flex;
     justify-content: center;
     width: 100%;
 }
-.container .welcomeHeader nav ul li{
+.big-container .container .welcomeHeader nav ul li{
     padding: 0.3rem 0.5rem;
     margin-left: 0.3em;
     transition: 0.5s;
 }
-.container .welcomeHeader nav ul li:hover a{
+.big-container .container .welcomeHeader nav ul li:hover a{
    color: #91dbfd;
 }
-.container .welcomeHeader nav ul li a{
+.big-container .container .welcomeHeader nav ul li a{
       color: #fff;
       font-size: 1em;
       transition: 0.5s;
@@ -192,6 +192,14 @@ input{
 
 .login-container .container{
     padding-top: 2rem;
+}
+.login-container .container .logo{
+    padding-top: 2rem;
+    font-size: 2.2em;
+    margin-bottom: 1rem;
+    font-family: 'Dancing Script', cursive;
+    color: #91dbfd;
+    font-weight: 600;
 }
 .login-container .container form{
     width: 500px;
