@@ -1,3 +1,13 @@
+<?php
+
+$admin = password_hash("admin", PASSWORD_BCRYPT);
+
+$verify = password_verify("admin",'$2y$10$Qv7d4EXrDPVbXzzmu/5G8ubljPzjwDdwqnoq8nJh.Spq9KLRqUg/O');
+
+var_dump($verify);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
